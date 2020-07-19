@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## TODOs
+[ ] [this](https://storybook.js.org/) looks promising, should we use it? Its recommended from [here](https://create-react-app.dev/docs/developing-components-in-isolation/)
+[ ] [https://storybook.js.org/](This) looks promising, should we use it?
 
 ## Available Scripts
 
