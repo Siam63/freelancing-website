@@ -6,10 +6,10 @@
 
 ## Directory Structure
 ```
-├── public/                                     babel generated static files. Do not add to this unless you have reason
-├── src/                                        frontend source code
-    └── stylesheets/                                all the site wide styles. All new styles need to be imported here.
-    ├── components/                             all the react components
+├── public/          babel generated static files. Do not add to this unless you have reason
+├── src/             frontend source code
+    └── stylesheets/ all the site wide styles. All new styles need to be imported here.
+    ├── components/  all the react components
 ```
 
 ## TODOs
