@@ -5,7 +5,7 @@ class Feed extends Component {
     render() {
         return (
             <div className="Feed">
-
+                This is a feed
             </div>
         );
     }
