@@ -3,9 +3,12 @@ import axios from 'axios';
 import '../stylesheets/Feed.scss';
 
 class Feed extends Component {
-    state = {
-        posts: []
-    };
+    constructor(props) {
+        super(props);
+            this.state = {
+            posts: []
+        };
+    }
 
     // fetch sample posts
     componentDidMount() {
