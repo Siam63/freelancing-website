@@ -1,5 +1,7 @@
 ## TODOs
+- [x] Convert css to sass for more powerful styling
 - [ ] [this](https://storybook.js.org/) looks promising, should we use it? Its recommended from [here](https://create-react-app.dev/docs/developing-components-in-isolation/)
+- [ ] [Add testing](https://create-react-app.dev/docs/running-tests)
 
 ## Available Scripts
 
