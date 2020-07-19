@@ -5,7 +5,8 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                This is a header
+                {this.props.children}
+                <h3 className= "company-name">COMPANY NAME / LOGO</h3>
             </div>
         );
     }
