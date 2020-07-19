@@ -1,6 +1,5 @@
 ## TODOs
-[ ] [this](https://storybook.js.org/) looks promising, should we use it? Its recommended from [here](https://create-react-app.dev/docs/developing-components-in-isolation/)
-[ ] [https://storybook.js.org/](This) looks promising, should we use it?
+- [ ] [this](https://storybook.js.org/) looks promising, should we use it? Its recommended from [here](https://create-react-app.dev/docs/developing-components-in-isolation/)
 
 ## Available Scripts
 
