@@ -15,5 +15,5 @@
 ## TODOs
 - [x] Convert css to sass for more powerful styling
 - [x] Update readme with proper guidance
-- [ ] [this](https://storybook.js.org/) looks promising, should we use it? Its recommended from [here](https://create-react-app.dev/docs/developing-components-in-isolation/)
+- [ ] [Storebook](https://storybook.js.org/) looks promising, should we use it? Its recommended from [here](https://create-react-app.dev/docs/developing-components-in-isolation/)
 - [ ] [Add testing](https://create-react-app.dev/docs/running-tests)
