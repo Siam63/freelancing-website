@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 import '../stylesheets/Feed.scss';
 import ServiceCard from "./ServiceCard";
 
@@ -39,10 +38,11 @@ class Feed extends Component {
     render() {
         return (
             <div className="feed">
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
-                <ServiceCard/>
+                {
+                    this.state.posts.map((post, i) => {
+                        return <ServiceCard post={post} key={i}></ServiceCard>;
+                    })
+                }
             </div>
         );
     }

@@ -7,12 +7,17 @@ import ServiceCardNavigation from "./ServiceCardNavigation";
 class ServiceCard extends Component {
     constructor(props){
         super(props);
+        this.state = {
+            'post': {
+                'profilePicture': this.props.post.profilePicture
+            }
+        };
     }
 
     render() {
         return (
             <div className="serviceCard">
-                <ServiceCardProfilePicture/>
+                <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture} />
                 <ServiceCardDetails/>
                 <ServiceCardNavigation/>
             </div>
