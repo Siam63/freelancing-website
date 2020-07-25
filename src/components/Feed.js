@@ -23,13 +23,14 @@ class Feed extends Component {
     render() {
         return (
             <div className="feed">
-                <ul>
-                    {
-                        this.state.posts.map((post) => {
-                            return <li key={post.id}>{post.first_name}</li>;
-                        })
-                    }
-                </ul>
+                {/*<ul>*/}
+                {/*    {*/}
+                {/*        this.state.posts.map((post) => {*/}
+                {/*            return <li key={post.id}>{post.first_name}</li>;*/}
+                {/*        })*/}
+                {/*    }*/}
+                {/*</ul>*/}
+                Feed
             </div>
         );
     }
