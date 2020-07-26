@@ -9,7 +9,12 @@ class ServiceCard extends Component {
         super(props);
         this.state = {
             'post': {
-                'profilePicture': this.props.post.profilePicture
+                'profilePicture': this.props.post.profilePicture,
+                'firstName': this.props.post.firstName,
+                'lastName': this.props.post.lastName,
+                'title': this.props.post.title,
+                'rating': this.props.post.rating,
+                'reviews': this.props.post.reviews
             }
         };
     }
@@ -18,7 +23,13 @@ class ServiceCard extends Component {
         return (
             <div className="serviceCard">
                 <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture} />
-                <ServiceCardDetails/>
+                <ServiceCardDetails 
+                    firstName={this.state.post.firstName} 
+                    lastName={this.state.post.lastName}
+                    title={this.state.post.title}
+                    rating={this.state.post.rating} 
+                    reviews={this.state.post.reviews}/>
+
                 <ServiceCardNavigation/>
             </div>
         );
