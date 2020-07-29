@@ -18,8 +18,23 @@ class Feed extends Component {
                             "rating": 4.9
                         }
                     ],
-                    "hourlyRateCents": 8000,
+                    "hourlyRate": 8000,
                     "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp"
+                },
+                
+                {
+                    "firstName": "Michael",
+                    "lastName": "Scott",
+                    "title": "Plumber",
+                    "rating": 4.2,
+                    "reviews": [
+                        {
+                            "review": "Great job!",
+                            "rating": 4.2
+                        }
+                    ],
+                    "hourlyRate": 5000,
+                    "profilePicture": "https://vignette.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest/top-crop/width/360/height/360?cb=20200413224550"
                 },
             ]
         };

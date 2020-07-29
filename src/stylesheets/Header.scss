@@ -1,11 +1,12 @@
 .header {
   display: flex;
   background-color: rgb(183, 183, 183);
+  flex-direction: row;
   padding-top:5px;
   width: 100%;
 }
 
 .company-name{
   color: black;
-  margin-left: 50px;
+  margin-left: -150px;
 }

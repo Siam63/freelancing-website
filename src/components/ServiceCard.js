@@ -14,7 +14,8 @@ class ServiceCard extends Component {
                 'lastName': this.props.post.lastName,
                 'title': this.props.post.title,
                 'rating': this.props.post.rating,
-                'reviews': this.props.post.reviews
+                'reviews': this.props.post.reviews,
+                'hourlyRate': this.props.post.hourlyRate
             }
         };
     }
@@ -23,13 +24,13 @@ class ServiceCard extends Component {
         return (
             <div className="serviceCard">
                 <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture} />
-                <ServiceCardDetails 
+                <ServiceCardDetails
                     firstName={this.state.post.firstName} 
                     lastName={this.state.post.lastName}
                     title={this.state.post.title}
                     rating={this.state.post.rating} 
-                    reviews={this.state.post.reviews}/>
-
+                    reviews={this.state.post.reviews}
+                    hourlyRate = {this.state.post.hourlyRate/100}/>
                 <ServiceCardNavigation/>
             </div>
         );

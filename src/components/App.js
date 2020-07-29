@@ -11,8 +11,8 @@ class App extends Component {
     return (
         <div className='App'>
             <Header>
-              <Button text='Sign In'/>
-              <Button text='Sign Up'/>
+              <Button className="btn" text='Sign In'/>
+              <Button className="btn" text='Sign Up'/>
             </Header>
             <MainContent>
                 <Sidebar/>
