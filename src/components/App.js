@@ -10,10 +10,7 @@ class App extends Component {
   render() {
     return (
         <div className='App'>
-            <Header>
-              <Button className="btn" text='Sign In'/>
-              <Button className="btn" text='Sign Up'/>
-            </Header>
+            <Header/>
             <MainContent>
                 <Sidebar/>
                 <Feed/>

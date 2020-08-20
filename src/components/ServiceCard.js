@@ -3,6 +3,7 @@ import '../stylesheets/ServiceCard.scss';
 import ServiceCardProfilePicture from "./ServiceCardProfilePicture";
 import ServiceCardDetails from "./ServiceCardDetails";
 import ServiceCardNavigation from "./ServiceCardNavigation";
+import RatingImage from "./RatingImage";
 
 class ServiceCard extends Component {
     constructor(props){
@@ -14,8 +15,10 @@ class ServiceCard extends Component {
                 'lastName': this.props.post.lastName,
                 'title': this.props.post.title,
                 'rating': this.props.post.rating,
+                'ratingImage': this.props.post.ratingImage,
                 'reviews': this.props.post.reviews,
-                'hourlyRate': this.props.post.hourlyRate
+                'hourlyRate': this.props.post.hourlyRate,
+                'companyName': this.props.post.companyName
             }
         };
     }
@@ -23,15 +26,16 @@ class ServiceCard extends Component {
     render() {
         return (
             <div className="serviceCard">
-                <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture} />
+                <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture}/>
                 <ServiceCardDetails
-                    firstName={this.state.post.firstName} 
-                    lastName={this.state.post.lastName}
+                    companyName={this.state.post.companyName}
                     title={this.state.post.title}
-                    rating={this.state.post.rating} 
+                    rating={this.state.post.rating}
+                    ratingImage={this.state.post.ratingImage}
                     reviews={this.state.post.reviews}
-                    hourlyRate = {this.state.post.hourlyRate/100}/>
-                <ServiceCardNavigation/>
+                />
+                <ServiceCardNavigation hourlyRate={this.state.post.hourlyRate/100}/>
+                <RatingImage ratingImage={this.state.post.ratingImage}/>
             </div>
         );
     }

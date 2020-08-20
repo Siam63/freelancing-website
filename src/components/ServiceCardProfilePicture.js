@@ -11,8 +11,7 @@ class ServiceCardProfilePicture extends Component {
 
     render() {
         return (
-            <img className="serviceCardProfilePicture" src={this.state.profilePicture} alt='Profile image'>
-            </img>
+            <img className="serviceCardProfilePicture" src={this.state.profilePicture} alt='Profile image'/>
         );
     }
 }

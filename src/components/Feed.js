@@ -8,10 +8,11 @@ class Feed extends Component {
         this.state = {
             posts: [
                 {
-                    "firstName": "Wasiur",
-                    "lastName": "Rahman",
+                    "firstName": "Steve",
+                    "lastName": "Cao",
                     "title": "Kitchen Renovation",
                     "rating": 4.9,
+                    "companyName": "Something Ltd.",
                     "reviews": [
                         {
                             "review": "Amazing job",
@@ -19,7 +20,8 @@ class Feed extends Component {
                         }
                     ],
                     "hourlyRate": 8000,
-                    "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp"
+                    "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp",
+                    "ratingImage": "https://lh3.googleusercontent.com/proxy/z-Nl6fqXwox2DpJdOXkQEtbs2xNgipkL589dd7rSKZNxgEYM2sbNYEyeZaE_nhXEoFJPiKi6pS4exLp262HS5SYSRvp_eWSGIMPgxHXRnD2Sigha-Q"
                 },
                 
                 {
@@ -27,6 +29,7 @@ class Feed extends Component {
                     "lastName": "Scott",
                     "title": "Plumber",
                     "rating": 4.2,
+                    "companyName": "Something Enterprise",
                     "reviews": [
                         {
                             "review": "Great job!",
@@ -34,7 +37,8 @@ class Feed extends Component {
                         }
                     ],
                     "hourlyRate": 5000,
-                    "profilePicture": "https://vignette.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest/top-crop/width/360/height/360?cb=20200413224550"
+                    "profilePicture": "https://vignette.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest/top-crop/width/360/height/360?cb=20200413224550",
+                    "ratingImage": "https://lh3.googleusercontent.com/proxy/z-Nl6fqXwox2DpJdOXkQEtbs2xNgipkL589dd7rSKZNxgEYM2sbNYEyeZaE_nhXEoFJPiKi6pS4exLp262HS5SYSRvp_eWSGIMPgxHXRnD2Sigha-Q"
                 },
             ]
         };
