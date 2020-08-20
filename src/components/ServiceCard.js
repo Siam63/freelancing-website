@@ -3,7 +3,7 @@ import '../stylesheets/ServiceCard.scss';
 import ServiceCardProfilePicture from "./ServiceCardProfilePicture";
 import ServiceCardDetails from "./ServiceCardDetails";
 import ServiceCardNavigation from "./ServiceCardNavigation";
-import RatingImage from "./RatingImage";
+import Rating from "./Rating";
 
 class ServiceCard extends Component {
     constructor(props){
@@ -11,14 +11,13 @@ class ServiceCard extends Component {
         this.state = {
             'post': {
                 'profilePicture': this.props.post.profilePicture,
-                'firstName': this.props.post.firstName,
-                'lastName': this.props.post.lastName,
                 'title': this.props.post.title,
                 'rating': this.props.post.rating,
                 'ratingImage': this.props.post.ratingImage,
                 'reviews': this.props.post.reviews,
                 'hourlyRate': this.props.post.hourlyRate,
-                'companyName': this.props.post.companyName
+                'companyName': this.props.post.companyName,
+                'totalHires': this.props.post.totalHires
             }
         };
     }
@@ -31,11 +30,11 @@ class ServiceCard extends Component {
                     companyName={this.state.post.companyName}
                     title={this.state.post.title}
                     rating={this.state.post.rating}
-                    ratingImage={this.state.post.ratingImage}
+                    totalHires={this.state.post.totalHires}
                     reviews={this.state.post.reviews}
                 />
                 <ServiceCardNavigation hourlyRate={this.state.post.hourlyRate/100}/>
-                <RatingImage ratingImage={this.state.post.ratingImage}/>
+                <Rating ratingImage={this.state.post.ratingImage}/>
             </div>
         );
     }

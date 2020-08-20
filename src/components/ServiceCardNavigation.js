@@ -17,6 +17,9 @@ class ServiceCardNavigation extends Component {
                 <div className="hourlyRate">
                     ${this.state.hourlyRate}/Hour
                 </div>
+                <div className="num-reviews">
+                    {this.state.reviews}
+                </div>
                 <button className="view-profile" onClick={this.clickHandler}>View Profile</button>
             </div>
         );

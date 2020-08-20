@@ -1,9 +1,9 @@
 .serviceCardNavigation {
   display: flex;
-  background-color: white;
+  flex-direction: column;
   flex-grow: 1;
-  margin: 10px 10px 10px 0px;
-  font-family: "Verdana";
+  margin: 10px 10px 10px 0;
+  font-family: "Verdana", serif;
   padding: 5px 5px;
   position: relative;
   bottom: 6px;
@@ -12,8 +12,15 @@
 .view-profile{
   color:white;
   background-color: dodgerblue;
-  height: 20px;
+  height: 30px;
   position: relative;
-  top: 90px;
-  right: 85px;
+  top: 75px;
+  right: 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.num-reviews{
+  color:black;
 }

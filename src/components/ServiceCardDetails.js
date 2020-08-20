@@ -8,17 +8,14 @@ class ServiceCardDetails extends Component {
             'title': this.props.title,
             'rating': this.props.rating,
             'reviews': this.props.reviews,
-            'companyName': this.props.companyName
+            'companyName': this.props.companyName,
+            'totalHires': this.props.totalHires,
         }
-    }
-
-    clickHandler(){
-        alert("Servicecard was clicked.")
     }
 
     render() {
         return (
-            <div className="serviceCardDetails" onClick={this.clickHandler}>
+            <div className="serviceCardDetails">
                 <div className="company-name">
                     {this.state.companyName}
                 </div>
@@ -27,6 +24,9 @@ class ServiceCardDetails extends Component {
                 </div>
                 <div className="title">
                     {this.state.title}
+                </div>
+                <div className="total-hires">
+                    {this.state.totalHires} hires on this website
                 </div>
             </div>
         );

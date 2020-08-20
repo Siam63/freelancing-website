@@ -13,7 +13,40 @@ class Feed extends Component {
                     "title": "Kitchen Renovation",
                     "rating": 4.9,
                     "companyName": "Something Ltd.",
+                    "totalHires": 10,
                     "reviews": [
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
+                        {
+                            "review": "Amazing job",
+                            "rating": 4.9
+                        },
                         {
                             "review": "Amazing job",
                             "rating": 4.9
@@ -29,6 +62,7 @@ class Feed extends Component {
                     "lastName": "Scott",
                     "title": "Plumber",
                     "rating": 4.2,
+                    "totalHires": 8,
                     "companyName": "Something Enterprise",
                     "reviews": [
                         {
