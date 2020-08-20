@@ -3,6 +3,7 @@ import '../stylesheets/ServiceCard.scss';
 import ServiceCardProfilePicture from "./ServiceCardProfilePicture";
 import ServiceCardDetails from "./ServiceCardDetails";
 import ServiceCardNavigation from "./ServiceCardNavigation";
+import Rating from "./Rating";
 
 class ServiceCard extends Component {
     constructor(props){
@@ -10,12 +11,13 @@ class ServiceCard extends Component {
         this.state = {
             'post': {
                 'profilePicture': this.props.post.profilePicture,
-                'firstName': this.props.post.firstName,
-                'lastName': this.props.post.lastName,
                 'title': this.props.post.title,
                 'rating': this.props.post.rating,
+                'ratingImage': this.props.post.ratingImage,
                 'reviews': this.props.post.reviews,
-                'hourlyRate': this.props.post.hourlyRate
+                'hourlyRate': this.props.post.hourlyRate,
+                'companyName': this.props.post.companyName,
+                'totalHires': this.props.post.totalHires
             }
         };
     }
@@ -23,15 +25,16 @@ class ServiceCard extends Component {
     render() {
         return (
             <div className="serviceCard">
-                <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture} />
+                <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture}/>
                 <ServiceCardDetails
-                    firstName={this.state.post.firstName} 
-                    lastName={this.state.post.lastName}
+                    companyName={this.state.post.companyName}
                     title={this.state.post.title}
-                    rating={this.state.post.rating} 
+                    rating={this.state.post.rating}
+                    totalHires={this.state.post.totalHires}
                     reviews={this.state.post.reviews}
-                    hourlyRate = {this.state.post.hourlyRate/100}/>
-                <ServiceCardNavigation/>
+                />
+                <ServiceCardNavigation hourlyRate={this.state.post.hourlyRate/100}/>
+                <Rating ratingImage={this.state.post.ratingImage}/>
             </div>
         );
     }

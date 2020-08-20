@@ -1,12 +1,79 @@
 .header {
   display: flex;
-  background-color: rgb(183, 183, 183);
   flex-direction: row;
   padding-top:5px;
   width: 100%;
+  border-bottom: solid;
+  border-color: lightgray;
+  border-width: 2px;
 }
 
-.company-name{
-  color: black;
-  margin-left: -150px;
+.company-header{
+  color: red;
+  position: relative;
+  left: 20px;
+}
+
+.search-bar{
+  color:black;
+  position:relative;
+  text-align: center;
+  left: 138px;
+  width: 400px;
+  height: 30px;
+  padding: 2px;
+  background-color: white;
+  top: 8px;
+}
+
+.btn-premium{
+  position: relative;
+  left: 300px;
+  padding: 5px;
+  margin: 10px;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.btn-premium:active{
+  background-color: cornflowerblue;
+}
+
+.btn-premium:hover{
+  cursor: pointer;
+}
+
+.btn-signIn{
+  position: relative;
+  left: 300px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.btn-signIn:active{
+  background-color: lightgray;
+}
+
+.btn-signIn:hover{
+  cursor: pointer;
+}
+
+.btn-signUp{
+  position: relative;
+  left: 300px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.btn-signUp:hover{
+  cursor: pointer;
+}
+
+.btn-signUp:active{
+  background-color: lightgray;
 }

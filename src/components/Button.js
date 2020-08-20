@@ -9,9 +9,11 @@ class Button extends Component {
         };
     }
 
+    clickHandler = (e) => alert(e);
+    
     render() {
         return (
-            <button className="btn">
+            <button className="btn" onClick={() => this.clickHandler("The button was clicked!")}>
                 {this.state.text}
             </button>
         );

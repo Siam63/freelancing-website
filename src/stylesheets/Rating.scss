@@ -1,0 +1,12 @@
+.ratingImage{
+  height: 18px;
+  width: 18px;
+}
+
+.stars{
+  display: flex;
+  flex-direction: row;
+  flex: 10%;
+  padding: 2px;
+  width: 50%;
+}

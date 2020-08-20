@@ -1,5 +1,15 @@
-.sidebar {
+sidebar.sidebar {
   display: flex;
   flex-grow: 1;
   background-color: gray;
+}
+
+.filterList{
+  font-size: 20px;
+  background-color: gray;
+  padding: 20px;
+}
+
+.li{
+  margin: 10px;
 }
