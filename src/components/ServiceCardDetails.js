@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../stylesheets/ServiceCardDetails.scss';
+import Rating from "./Rating";
 
 class ServiceCardDetails extends Component {
     constructor(props){
@@ -19,9 +20,7 @@ class ServiceCardDetails extends Component {
                 <div className="company-name">
                     {this.state.companyName}
                 </div>
-                <div className="rating">
-                    {this.state.rating}/5
-                </div>
+                <Rating reviews={this.state.reviews} />
                 <div className="title">
                     {this.state.title}
                 </div>

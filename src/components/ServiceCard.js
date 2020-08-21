@@ -13,7 +13,6 @@ class ServiceCard extends Component {
                 'profilePicture': this.props.post.profilePicture,
                 'title': this.props.post.title,
                 'rating': this.props.post.rating,
-                'ratingImage': this.props.post.ratingImage,
                 'reviews': this.props.post.reviews,
                 'hourlyRate': this.props.post.hourlyRate,
                 'companyName': this.props.post.companyName,

@@ -53,8 +53,7 @@ class Feed extends Component {
                         }
                     ],
                     "hourlyRate": 8000,
-                    "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp",
-                    "ratingImage": "https://lh3.googleusercontent.com/proxy/z-Nl6fqXwox2DpJdOXkQEtbs2xNgipkL589dd7rSKZNxgEYM2sbNYEyeZaE_nhXEoFJPiKi6pS4exLp262HS5SYSRvp_eWSGIMPgxHXRnD2Sigha-Q"
+                    "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp"
                 },
                 
                 {
@@ -71,8 +70,7 @@ class Feed extends Component {
                         }
                     ],
                     "hourlyRate": 5000,
-                    "profilePicture": "https://vignette.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest/top-crop/width/360/height/360?cb=20200413224550",
-                    "ratingImage": "https://lh3.googleusercontent.com/proxy/z-Nl6fqXwox2DpJdOXkQEtbs2xNgipkL589dd7rSKZNxgEYM2sbNYEyeZaE_nhXEoFJPiKi6pS4exLp262HS5SYSRvp_eWSGIMPgxHXRnD2Sigha-Q"
+                    "profilePicture": "https://vignette.wikia.nocookie.net/theoffice/images/b/be/Character_-_MichaelScott.PNG/revision/latest/top-crop/width/360/height/360?cb=20200413224550"
                 },
             ]
         };
