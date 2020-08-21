@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import Feed from './Feed';
-import Button from './Button';
 import Sidebar from './Sidebar';
 import '../stylesheets/App.scss';
 import MainContent from "./MainContent";
