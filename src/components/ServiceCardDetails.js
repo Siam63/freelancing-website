@@ -20,7 +20,7 @@ class ServiceCardDetails extends Component {
                 <div className="company-name">
                     {this.state.companyName}
                 </div>
-                <Rating reviews={this.state.reviews} />
+                <Rating reviews={this.state.reviews}/>
                 <div className="title">
                     {this.state.title}
                 </div>
