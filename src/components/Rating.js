@@ -5,6 +5,7 @@ class Rating extends Component {
     constructor(props){
         super(props);
         this.state = {
+            'rating': 3.5,
             'ratingImage': props.ratingImage
         }
     }
@@ -14,7 +15,7 @@ class Rating extends Component {
             <div className="stars">
                 {
                     Array(5).fill().map((_, i) => {
-                        if (i + 1 < this.state.rating) {
+                        if (i < Math.floor(this.state.rating)) {
                             return <img className="ratingImage" src={this.state.ratingImage} alt='Rating Image' key={i}/>
                         }
                     })
