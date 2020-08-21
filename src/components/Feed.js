@@ -78,16 +78,6 @@ class Feed extends Component {
         };
     }
 
-    // fetch sample posts
-    componentDidMount() {
-        // axios.get(`https://reqres.in/api/users`).then(res => {
-        //         console.log(res);
-        //         this.setState({
-        //             posts: res.data.data
-        //         });
-        //     });
-    }
-
     render() {
         return (
             <div className="feed">

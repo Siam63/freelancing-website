@@ -34,7 +34,6 @@ class ServiceCard extends Component {
                     reviews={this.state.post.reviews}
                 />
                 <ServiceCardNavigation hourlyRate={this.state.post.hourlyRate/100}/>
-                <Rating ratingImage={this.state.post.ratingImage}/>
             </div>
         );
     }
