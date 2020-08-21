@@ -1,23 +1,23 @@
-.serviceCardNavigation {
+.service-card-navigation {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  margin: 10px 10px 10px 0;
-  padding: 5px 5px;
-  position: relative;
-  bottom: 6px;
+  justify-content: space-between;
 }
 
-.view-profile{
+.service-card-navigation .hourly-rate {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.service-card-navigation .view-profile{
   color:white;
   background-color: dodgerblue;
-  height: 30px;
-  position: relative;
+  padding: 5px;
   top: 75px;
   right: 20px;
-  border-radius: 5px;
   font-size: 15px;
-  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 .num-reviews{

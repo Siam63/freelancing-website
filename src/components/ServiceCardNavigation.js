@@ -13,8 +13,8 @@ class ServiceCardNavigation extends Component {
 
     render() {
         return (
-            <div className="serviceCardNavigation">
-                <div className="hourlyRate">
+            <div className="service-card-navigation">
+                <div className="hourly-rate">
                     ${this.state.hourlyRate}/Hour
                 </div>
                 <div className="num-reviews">
