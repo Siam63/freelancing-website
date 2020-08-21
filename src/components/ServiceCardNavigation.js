@@ -5,6 +5,7 @@ class ServiceCardNavigation extends Component {
     constructor(props){
         super(props);
         this.state = {
+            'reviews': this.props.reviews,
             'hourlyRate': this.props.hourlyRate
         }
     }
@@ -18,7 +19,7 @@ class ServiceCardNavigation extends Component {
                     ${this.state.hourlyRate}/Hour
                 </div>
                 <div className="num-reviews">
-                    {this.state.reviews}
+
                 </div>
                 <button className="view-profile" onClick={this.clickHandler}>View Profile</button>
             </div>

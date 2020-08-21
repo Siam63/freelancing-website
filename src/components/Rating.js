@@ -19,7 +19,6 @@ class Rating extends Component {
         let avgRatings = total / this.state.reviews.length;
         return (
             <div className="stars">
-                <div className="ratings-text">({avgRatings.toFixed(2)})</div>
                 {
                     Array(5).fill(0).map((val, i) => {
                         if (i < Math.floor(avgRatings)) {
@@ -27,6 +26,7 @@ class Rating extends Component {
                         }
                     })
                 }
+                <div className="ratings-text">({avgRatings.toFixed(1)})</div>
             </div>
         );
     }
