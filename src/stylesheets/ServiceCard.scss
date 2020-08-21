@@ -1,17 +1,15 @@
-.serviceCard {
+.service-card {
   display: flex;
   flex-direction: row;
-  background-color: white;
   margin-bottom: 8px;
   margin-top: 8px;
-  width: 45%;
-  height: 22%;
+  width: 28%;
   border-bottom: solid;
   border-color: lightgray;
   border-width: 1px;
 }
 
-.serviceCard:hover{
+.service-card:hover{
   box-shadow: 3px 3px lightgray;
   cursor: pointer;
 }

@@ -23,7 +23,7 @@ class ServiceCard extends Component {
 
     render() {
         return (
-            <div className="serviceCard">
+            <div className="service-card">
                 <ServiceCardProfilePicture profilePicture={this.state.post.profilePicture}/>
                 <ServiceCardDetails
                     companyName={this.state.post.companyName}
