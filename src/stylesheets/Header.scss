@@ -23,7 +23,7 @@
   text-align: left;
   width: 400px;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 10px;
   margin-right: 30px;
   padding-left: 10px;
@@ -49,33 +49,38 @@
   cursor: pointer;
 }
 
-.btn-signIn{
+.explore-text{
   display: flex;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 6px;
+  padding: 5px;
+  margin-left: 5px;
+  color: dimgray;
+  font-weight: normal;
 }
 
-.btn-signIn:active{
-  background-color: lightgray;
-}
-
-.btn-signIn:hover{
+.explore-text:hover{
   cursor: pointer;
 }
 
-.btn-signUp{
+.sign-up-text{
   display: flex;
-  justify-content: right;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 6px;
+  padding: 5px;
+  margin-left: 5px;
+  color: dimgray;
+  font-weight: normal;
 }
 
-.btn-signUp:hover{
+.sign-up-text:hover{
   cursor: pointer;
 }
 
-.btn-signUp:active{
-  background-color: lightgray;
+.sign-in-text{
+  display: flex;
+  padding: 5px;
+  margin-left: 5px;
+  color: dimgray;
+  font-weight: normal;
+}
+
+.sign-in-text:hover{
+  cursor: pointer;
 }
