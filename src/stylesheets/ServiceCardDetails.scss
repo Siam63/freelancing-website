@@ -21,3 +21,16 @@
   left: 5px;
   color: gray;
 }
+
+.serviceCardDetails .service-card-tag{
+  display: flex;
+  font-size: 14px;
+  width: 120px;
+  height: 15px;
+  border-style: solid;
+  justify-content: center;
+  border-width: 1px;
+  border-radius: 10px;
+  margin-left: 5px;
+  background-color: lightgreen;
+}

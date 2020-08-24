@@ -11,24 +11,31 @@ class ServiceCardDetails extends Component {
             'reviews': this.props.reviews,
             'companyName': this.props.companyName,
             'totalHires': this.props.totalHires,
+            'serviceCardTag': this.props.serviceCardTag
         }
     }
 
     render() {
-        return (
-            <div className="serviceCardDetails">
-                <div className="company-name">
-                    {this.state.companyName}
-                </div>
-                <Rating reviews={this.state.reviews}/>
-                <div className="title">
-                    {this.state.title}
-                </div>
-                <div className="total-hires">
-                    {this.state.totalHires} hires on this website
-                </div>
+        let tag = <div/>;
+        if (this.state.reviews.length !== 0) {
+            tag = <div className="service-card-tag">
+                <div>{this.state.serviceCardTag}</div>
+            </div>;
+        }
+
+        return <div className="serviceCardDetails">
+            <div className="company-name">
+                {this.state.companyName}
             </div>
-        );
+            <Rating reviews={this.state.reviews}/>
+            {tag}
+            <div className="title">
+                {this.state.title}
+            </div>
+            <div className="total-hires">
+                {this.state.totalHires} hires on this website
+            </div>
+        </div>;
     }
 }
 

@@ -16,7 +16,8 @@ class ServiceCard extends Component {
                 'reviews': this.props.post.reviews,
                 'hourlyRate': this.props.post.hourlyRate,
                 'companyName': this.props.post.companyName,
-                'totalHires': this.props.post.totalHires
+                'totalHires': this.props.post.totalHires,
+                'serviceCardTag': this.props.post.serviceCardTag
             }
         };
     }
@@ -31,6 +32,7 @@ class ServiceCard extends Component {
                     rating={this.state.post.rating}
                     totalHires={this.state.post.totalHires}
                     reviews={this.state.post.reviews}
+                    serviceCardTag={this.state.post.serviceCardTag}
                 />
                 <ServiceCardNavigation hourlyRate={this.state.post.hourlyRate/100}/>
             </div>
