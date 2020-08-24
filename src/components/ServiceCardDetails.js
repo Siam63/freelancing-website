@@ -33,7 +33,9 @@ class ServiceCardDetails extends Component {
                 {this.state.title}
             </div>
             <div className="total-hires">
-                {this.state.totalHires} hires on this website
+                {
+                    this.state.totalHires === 1 ? <div>{this.state.totalHires} hire on this website</div> : <div>{this.state.totalHires} hires on this website</div>
+                }
             </div>
         </div>;
     }

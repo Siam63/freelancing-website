@@ -76,19 +76,45 @@ class Feed extends Component {
                 },
 
                 {
-                    "firstName": "Random",
-                    "lastName": "Cao",
-                    "title": "Kitchen Renovation",
+                    "firstName": "Harold",
+                    "lastName": "Jerry",
+                    "title": "Carpenter",
                     "rating": 0,
-                    "companyName": "Something Ltd.",
-                    "totalHires": 10,
+                    "companyName": "Something Else Company",
+                    "totalHires": 1,
                     "reviews": [
 
                     ],
-                    "hourlyRate": 8000,
-                    "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp",
+                    "hourlyRate": 4000,
+                    "profilePicture": "https://pbs.twimg.com/media/Darn-y9X4AAlyoz.jpg",
                     "serviceCardTag": "In High Demand"
                 },
+
+                {
+                    "firstName": "Arnold",
+                    "lastName": "Kabar",
+                    "title": "Gardener",
+                    "rating": 2.7,
+                    "companyName": "Something Else Company",
+                    "totalHires": 6,
+                    "reviews": [
+                        {
+                            "review": "Great job!",
+                            "rating": 2.7
+                        },
+                        {
+                            "review": "Great job!",
+                            "rating": 2.7
+                        },
+                        {
+                            "review": "Great job!",
+                            "rating": 2.9
+                        }
+                    ],
+                    "hourlyRate": 4000,
+                    "profilePicture": "https://www.legal500.com/wp-content/uploads/assets/legal500/lawyer_photos/10224/10248_1174867.jpg?v=1580315674",
+                    "serviceCardTag": "In High Demand"
+                }
             ]
         };
     }
