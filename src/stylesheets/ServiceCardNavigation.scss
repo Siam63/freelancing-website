@@ -1,29 +1,54 @@
 .service-card-navigation {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-items: center;
 }
 
 .service-card-navigation .hourly-rate {
-  text-align: center;
-  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
   font-weight: bold;
 }
 
 .service-card-navigation .view-profile{
-  color:white;
+  display: flex;
   background-color: #59AFFF;
-  padding: 5px;
-  top: 75px;
-  right: 20px;
-  font-size: 16px;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  border-radius: 12px;
+  color: white;
   font-weight: bold;
-  box-shadow: none;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  font-size: 18px;
+  justify-content: center;
+  width: 125px;
+  margin-top: 30px;
+}
+
+.view-profile:hover{
+  cursor: pointer;
+  background-color: royalblue;
+}
+
+.view-profile:active{
+  background-color: cornflowerblue;
 }
 
 .num-reviews{
-  color:black;
+  display: flex;
+  color: gray;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.read-more-text:hover{
+  cursor: pointer;
+  color: gray;
+}
+
+.read-more-text{
+  display: flex;
+  color: deepskyblue;
+  font-size: 15px;
+  white-space: nowrap;
 }
