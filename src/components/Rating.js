@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import '../stylesheets/Rating.scss';
 
 const ratingImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Green_star.svg/1024px-Green_star.svg.png";
-const ratingImageGray = "https://purepng.com/public/uploads/large/purepng.com-grey-starstargeometricallydecagonconcavestardomclipartblackgrey-1421526502793oblca.png"
+const ratingImageGray = "https://purepng.com/public/uploads/large/purepng.com-grey-starstargeometricallydecagonconcavestardomclipartblackgrey-1421526502793oblca.png";
 
 class Rating extends Component {
     constructor(props){

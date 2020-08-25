@@ -50,5 +50,25 @@
   display: flex;
   color: deepskyblue;
   font-size: 15px;
-  white-space: nowrap;
+}
+
+.msg-img{
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  margin-left: auto;
+}
+
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  color: darkgray;
+  font-size: 12px;
+}
+
+.contact-text:hover{
+  cursor: pointer;
+  opacity: 75%;
 }

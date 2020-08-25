@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 import '../stylesheets/ServiceCardNavigation.scss';
 
+const messageImage = "https://cdn.iconscout.com/icon/free/png-512/message-537-461910.png";
+
 class ServiceCardNavigation extends Component {
     constructor(props){
         super(props);
         this.state = {
+            'showContactForPrice': this.props.showContactForPrice,
             'totalReviews': this.props.totalReviews,
             'hourlyRate': this.props.hourlyRate
         }
@@ -17,7 +20,9 @@ class ServiceCardNavigation extends Component {
         return (
             <div className="service-card-navigation">
                 <div className="hourly-rate">
-                    ${this.state.hourlyRate}/Hour
+                    {
+                        this.state.showContactForPrice ? <div className="contact-text"><img className="msg-img" src={messageImage} alt='Message Image'/>contact for price</div> : <div>${this.state.hourlyRate}/Hour</div>
+                    }
                 </div>
                 <div className="num-reviews">
                     {
