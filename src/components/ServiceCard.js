@@ -36,6 +36,7 @@ class ServiceCard extends Component {
                     serviceCardTag={this.state.post.serviceCardTag}
                 />
                 <ServiceCardNavigation
+                    showModalToggle={this.props.showModalToggle}
                     showContactForPrice={this.state.post.showContactForPrice}
                     hourlyRate={this.state.post.hourlyRate/100}
                     totalReviews={this.state.post.reviews.length}
