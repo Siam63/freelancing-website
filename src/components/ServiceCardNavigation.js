@@ -9,8 +9,14 @@ class ServiceCardNavigation extends Component {
         this.state = {
             'showContactForPrice': this.props.showContactForPrice,
             'totalReviews': this.props.totalReviews,
-            'hourlyRate': this.props.hourlyRate
+            'hourlyRate': this.props.hourlyRate,
+            'reviews': this.props.reviews
         }
+    }
+
+    viewProfileOnclick = () => {
+        this.props.reviewSetter(this.state.reviews);
+        this.props.showModalToggle();
     }
 
     render() {
@@ -28,7 +34,7 @@ class ServiceCardNavigation extends Component {
                         </div>
                     }
                 </div>
-                <button className="view-profile" onClick={this.props.showModalToggle}>View Profile</button>
+                <button className="view-profile" onClick={this.viewProfileOnclick}>View Profile</button>
             </div>
         );
     }
