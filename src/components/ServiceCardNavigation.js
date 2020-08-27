@@ -13,10 +13,7 @@ class ServiceCardNavigation extends Component {
         }
     }
 
-    clickHandler = () => alert("The profile was clicked!");
-
     render() {
-        console.log(this.state.reviews)
         return (
             <div className="service-card-navigation">
                 <div className="hourly-rate">
@@ -31,7 +28,7 @@ class ServiceCardNavigation extends Component {
                         </div>
                     }
                 </div>
-                <button className="view-profile" onClick={this.clickHandler}>View Profile</button>
+                <button className="view-profile" onClick={this.props.showModalToggle}>View Profile</button>
             </div>
         );
     }

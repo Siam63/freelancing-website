@@ -254,7 +254,7 @@ class Feed extends Component {
             <div className="feed">
                 {
                     this.state.posts.map((post, i) => {
-                        return <ServiceCard post={post} key={i}/>;
+                        return <ServiceCard showModalToggle={this.props.showModalToggle} post={post} key={i}/>;
                     })
                 }
             </div>
