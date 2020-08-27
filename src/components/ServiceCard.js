@@ -3,7 +3,6 @@ import '../stylesheets/ServiceCard.scss';
 import ServiceCardProfilePicture from "./ServiceCardProfilePicture";
 import ServiceCardDetails from "./ServiceCardDetails";
 import ServiceCardNavigation from "./ServiceCardNavigation";
-import Rating from "./Rating";
 
 class ServiceCard extends Component {
     constructor(props){
@@ -36,6 +35,8 @@ class ServiceCard extends Component {
                     serviceCardTag={this.state.post.serviceCardTag}
                 />
                 <ServiceCardNavigation
+                    reviews={this.state.post.reviews}
+                    reviewSetter={this.props.reviewSetter}
                     showModalToggle={this.props.showModalToggle}
                     showContactForPrice={this.state.post.showContactForPrice}
                     hourlyRate={this.state.post.hourlyRate/100}

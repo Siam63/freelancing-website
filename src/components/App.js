@@ -4,26 +4,28 @@ import Feed from './Feed';
 import Sidebar from './Sidebar';
 import '../stylesheets/App.scss';
 import MainContent from "./MainContent";
+import Modal from "./Modal";
 
 class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
-          showModal: false
+          "showModal": false,
+          "reviews": []
       };
   }
 
   showModalToggle = () => {
       this.setState({
-          showModal: true
+          "showModal": true
       });
   }
 
-  hideModalToggle = () => {
+  setReviews = (reviews) => {
       this.setState({
-            showModal: false
-        });
-    }
+          "reviews": reviews
+      })
+  }
 
   render() {
     return (
@@ -31,15 +33,9 @@ class App extends Component {
             <Header/>
             <MainContent>
                 <Sidebar/>
-                <Feed showModalToggle={this.showModalToggle}/>
+                <Feed showModalToggle={this.showModalToggle} reviewSetter={this.setReviews}/>
             </MainContent>
-            <div className={`${this.state.showModal ? "modal" : "modal-hidden"}`}>
-                <div className='modal-title'>Modal Title</div>
-                <div className="content">
-                    <span className="close-button" onClick={this.hideModalToggle}>&times;</span>
-                    <p>This is a random modal</p>
-                </div>
-            </div>
+            <Modal reviews={this.state.reviews} showModal={this.state.showModal} />
         </div>
     );
   }

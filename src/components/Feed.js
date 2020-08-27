@@ -125,7 +125,7 @@ class Feed extends Component {
                     "lastName": "Cao",
                     "title": "Kitchen Renovation",
                     "rating": 4.9,
-                    "companyName": "Something Ltd.",
+                    "companyName": "Something Cool",
                     "totalHires": 10,
                     "reviews": [
                         {
@@ -183,35 +183,23 @@ class Feed extends Component {
                             "rating": 4.9
                         },
                         {
-                            "review": "Amazing job",
+                            "review": "Excellent",
                             "rating": 4.9
                         },
                         {
-                            "review": "Amazing job",
+                            "review": "Great!",
                             "rating": 4.9
                         },
                         {
-                            "review": "Amazing job",
+                            "review": "Great job",
                             "rating": 4.9
                         },
                         {
-                            "review": "Amazing job",
+                            "review": "Amazing",
                             "rating": 4.9
                         },
                         {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
+                            "review": "Amazing!",
                             "rating": 4.9
                         }
                     ],
@@ -254,7 +242,7 @@ class Feed extends Component {
             <div className="feed">
                 {
                     this.state.posts.map((post, i) => {
-                        return <ServiceCard showModalToggle={this.props.showModalToggle} post={post} key={i}/>;
+                        return <ServiceCard reviewSetter={this.props.reviewSetter} showModalToggle={this.props.showModalToggle} post={post} key={i}/>;
                     })
                 }
             </div>
