@@ -21,7 +21,7 @@ class Feed extends Component {
                         },
                         {
                             "review": "Amazing job",
-                            "rating": 4.9
+                            "rating": 2
                         },
                         {
                             "review": "Amazing job",
@@ -69,6 +69,10 @@ class Feed extends Component {
                         {
                             "review": "Great job!",
                             "rating": 4.2
+                        },
+                        {
+                            "review": "Great job!",
+                            "rating": 4.2
                         }
                     ],
                     "hourlyRate": 5000,
@@ -98,19 +102,19 @@ class Feed extends Component {
                     "lastName": "Kabar",
                     "title": "Gardener",
                     "rating": 2.7,
-                    "companyName": "Something Else Company",
+                    "companyName": "Whacky Weed Whisperer",
                     "totalHires": 6,
                     "reviews": [
                         {
-                            "review": "Great job!",
+                            "review": "Very lazy, but got the job done... 2 months later.",
                             "rating": 2.7
                         },
                         {
-                            "review": "Great job!",
+                            "review": "Took a very long time to complete task.",
                             "rating": 2.7
                         },
                         {
-                            "review": "Great job!",
+                            "review": "Satisfactory!",
                             "rating": 2.9
                         }
                     ],
@@ -180,27 +184,27 @@ class Feed extends Component {
                     "reviews": [
                         {
                             "review": "Amazing job",
-                            "rating": 4.9
+                            "rating": 4.4
                         },
                         {
                             "review": "Excellent",
-                            "rating": 4.9
+                            "rating": 4
                         },
                         {
                             "review": "Great!",
-                            "rating": 4.9
+                            "rating": 4.5
                         },
                         {
                             "review": "Great job",
                             "rating": 4.9
                         },
                         {
-                            "review": "Amazing",
-                            "rating": 4.9
+                            "review": "Interesting guy, bit creepy, but amazing work",
+                            "rating": 4.3
                         },
                         {
-                            "review": "Amazing!",
-                            "rating": 4.9
+                            "review": "Cool guy",
+                            "rating": 4.7
                         }
                     ],
                     "hourlyRate": 8000,
