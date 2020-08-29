@@ -16,41 +16,20 @@ class Feed extends Component {
                     "totalHires": 10,
                     "reviews": [
                         {
-                            "review": "Amazing job",
-                            "rating": 4.9
+                            "reviewTitle": "Amazing job",
+                            "rating": 4.3,
+                            "reviewComment": "Very friendly, my kitchen looks amazing!"
                         },
                         {
-                            "review": "Amazing job",
-                            "rating": 2
+                            "reviewTitle": "Amazing person, fantastic job",
+                            "rating": 4.3,
+                            "reviewComment": "Very friendly, my kitchen looks amazing!"
                         },
                         {
-                            "review": "Amazing job",
-                            "rating": 4.9
+                            "reviewTitle": "Great work",
+                            "rating": 4.3,
+                            "reviewComment": "Very friendly, my kitchen looks amazing!"
                         },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        }
                     ],
                     "hourlyRate": 8000,
                     "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp",
@@ -67,12 +46,14 @@ class Feed extends Component {
                     "companyName": "Something Enterprise",
                     "reviews": [
                         {
-                            "review": "Great job!",
-                            "rating": 4.2
+                            "reviewTitle": "Great job",
+                            "rating": 4.1,
+                            "reviewComment": "Quick and easy, great price."
                         },
                         {
-                            "review": "Great job!",
-                            "rating": 4.2
+                            "reviewTitle": "Cool guy!",
+                            "rating": 4.5,
+                            "reviewComment": "Very cool, super quick and easy, great communication"
                         }
                     ],
                     "hourlyRate": 5000,
@@ -106,16 +87,19 @@ class Feed extends Component {
                     "totalHires": 6,
                     "reviews": [
                         {
-                            "review": "Very lazy, but got the job done... 2 months later.",
-                            "rating": 2.7
+                            "reviewTitle": "Very lazy",
+                            "rating": 2.7,
+                            "reviewComment": "Very lazy, but got the job done... 2 months later."
                         },
                         {
-                            "review": "Took a very long time to complete task.",
-                            "rating": 2.7
+                            "reviewTitle": "Do not hire...",
+                            "rating": 2.7,
+                            "reviewComment": "Barely finished the task"
                         },
                         {
-                            "review": "Satisfactory!",
-                            "rating": 2.9
+                            "reviewTitle": "Creepy and lazy",
+                            "rating": 2.5,
+                            "reviewComment": "Keeps staring at me. Super lazy."
                         }
                     ],
                     "hourlyRate": 4000,
@@ -129,82 +113,23 @@ class Feed extends Component {
                     "lastName": "Cao",
                     "title": "Kitchen Renovation",
                     "rating": 4.9,
-                    "companyName": "Something Cool",
-                    "totalHires": 10,
-                    "reviews": [
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Amazing job",
-                            "rating": 4.9
-                        }
-                    ],
-                    "hourlyRate": 8000,
-                    "profilePicture": "https://production-next-images-cdn.thumbtack.com/i/387354220087107594/width/320.webp",
-                    "serviceCardTag": "In High Demand",
-                    "showContactForPrice": false
-                },
-                {
-                    "firstName": "Steve",
-                    "lastName": "Cao",
-                    "title": "Kitchen Renovation",
-                    "rating": 4.9,
                     "companyName": "Something Ltd.",
                     "totalHires": 10,
                     "reviews": [
                         {
-                            "review": "Amazing job",
-                            "rating": 4.4
+                            "reviewTitle": "Great",
+                            "rating": 4.7,
+                            "reviewComment": "Very amazing."
                         },
                         {
-                            "review": "Excellent",
-                            "rating": 4
+                            "reviewTitle": "Excellent",
+                            "rating": 4.7,
+                            "reviewComment": "Amazing job!"
                         },
                         {
-                            "review": "Great!",
-                            "rating": 4.5
-                        },
-                        {
-                            "review": "Great job",
-                            "rating": 4.9
-                        },
-                        {
-                            "review": "Interesting guy, bit creepy, but amazing work",
-                            "rating": 4.3
-                        },
-                        {
-                            "review": "Cool guy",
-                            "rating": 4.7
+                            "reviewTitle": "Great",
+                            "rating": 4.9,
+                            "reviewComment": "Very good!"
                         }
                     ],
                     "hourlyRate": 8000,
@@ -220,16 +145,19 @@ class Feed extends Component {
                     "totalHires": 5,
                     "reviews": [
                         {
-                            "review": "Amazing job",
-                            "rating": 3.7
+                            "reviewTitle": "Great",
+                            "rating": 3.7,
+                            "reviewComment": "Very amazing."
                         },
                         {
-                            "review": "Amazing job",
-                            "rating": 3.9
+                            "reviewTitle": "Great",
+                            "rating": 3.9,
+                            "reviewComment": "Very amazing."
                         },
                         {
-                            "review": "Amazing job",
-                            "rating": 3.8
+                            "reviewTitle": "Great",
+                            "rating": 4.5,
+                            "reviewComment": "Very amazing."
                         },
                     ],
                     "hourlyRate": 0,

@@ -8,6 +8,7 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  opacity: 95%;
 }
 
 .modal-hidden {
@@ -36,16 +37,25 @@
   cursor: pointer;
 }
 
-.review-list{
+.review-title{
   display: flex;
-  background-color: #e6e6e6;
-  padding:5px;
+  border-style: solid;
+  border-width: 1.2px;
+  border-radius: 10px;
+  padding: 5px;
+  width: 225px;
+  border-color: #999999;
 }
 
-.review-list2 {
-  background-color: #e6e6e6;
+.review-comment{
+  display: flex;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #d6d6d6;
+  padding-bottom: 10px;
 }
 
-.rating-box{
-  display: flex;
+.rating-image{
+  height: 15px;
+  width: 15px;
 }
