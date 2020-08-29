@@ -28,25 +28,25 @@ class Modal extends Component {
 
     render() {
         this.reviews = this.state.reviews.map((item) => {
-            console.log(item);
             return <div>
-                <ol className="review-list">{item.review} - {item.rating}</ol>
                 {
                     Array(5).fill(0).map((val, i) => {
                         if (i < Math.floor(item.rating)) {
-                            return <img className="ratingImage" src={ratingImage} alt='Rating Image' key={i}/>
+                            return <span><img className="rating-image" src={ratingImage} alt='Rating Image' key={i}/></span>
                         } else{
-                            return <img className="ratingImage-gray" src={ratingImageGray} alt='Rating Image Gray' key={i}/>
+                            return <span><img className="rating-image" src={ratingImageGray} alt='Rating Image Gray' key={i}/></span>
                         }
                     })
                 }
+                <p className="review-title">{item.reviewTitle}</p>
+                <p className="review-comment">Comment: {item.reviewComment}</p>
             </div>
         })
         return (
             <div className={`${this.state.showModal ? "modal" : "modal-hidden"}`}>
                 <div className="content">
                     <span className="close-button" onClick={this.hideModalToggle}>&times;</span>
-                    <p>This person has {this.state.reviews.length} review(s) to show</p>
+                    <p>This person has {this.state.reviews.length} review(s).</p>
                     <p className="review-list2">{this.reviews}</p>
                 </div>
             </div>
