@@ -32,9 +32,9 @@ class Modal extends Component {
                 {
                     Array(5).fill(0).map((val, i) => {
                         if (i < Math.floor(item.rating)) {
-                            return <span><img className="rating-image" src={ratingImage} alt='Rating Image' key={i}/></span>
+                            return <img className="rating-image" src={ratingImage} alt='Rating Image' key={i}/>
                         } else{
-                            return <span><img className="rating-image" src={ratingImageGray} alt='Rating Image Gray' key={i}/></span>
+                            return <img className="rating-image" src={ratingImageGray} alt='Rating Image Gray' key={i}/>
                         }
                     })
                 }

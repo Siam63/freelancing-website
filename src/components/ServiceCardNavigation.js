@@ -14,9 +14,13 @@ class ServiceCardNavigation extends Component {
         }
     }
 
-    viewProfileOnclick = () => {
+    readMoreOnClick = () => {
         this.props.reviewSetter(this.state.reviews);
         this.props.showModalToggle();
+    }
+
+    viewProfileOnClick = () => {
+
     }
 
     render() {
@@ -30,11 +34,11 @@ class ServiceCardNavigation extends Component {
                 <div className="num-reviews">
                     {
                         this.state.totalReviews === 0 ? <div>No reviews to show</div> : <div>{this.state.totalReviews} review(s) -
-                            <div className="read-more-text">Read More</div>
+                            <div className="read-more-text" onClick={this.readMoreOnClick}>Read More</div>
                         </div>
                     }
                 </div>
-                <button className="view-profile" onClick={this.viewProfileOnclick}>View Profile</button>
+                <button className="view-profile" onClick={this.viewProfileOnClick}>View Profile</button>
             </div>
         );
     }
