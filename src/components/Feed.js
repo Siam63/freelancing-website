@@ -8,8 +8,7 @@ class Feed extends Component {
         this.state = {
             posts: [
                 {
-                    "firstName": "Steve",
-                    "lastName": "Cao",
+                    "fullName": "Steve Cao",
                     "title": "Kitchen Renovation",
                     "rating": 4.9,
                     "companyName": "Something Ltd.",
@@ -38,8 +37,7 @@ class Feed extends Component {
                 },
                 
                 {
-                    "firstName": "Michael",
-                    "lastName": "Scott",
+                    "fullName": "Michael Scott",
                     "title": "Plumber",
                     "rating": 4.2,
                     "totalHires": 8,
@@ -63,8 +61,7 @@ class Feed extends Component {
                 },
 
                 {
-                    "firstName": "Harold",
-                    "lastName": "Jerry",
+                    "fullName": "Harold Jerry",
                     "title": "Carpenter",
                     "rating": 0,
                     "companyName": "Something Else Company",
@@ -79,8 +76,7 @@ class Feed extends Component {
                 },
 
                 {
-                    "firstName": "Arnold",
-                    "lastName": "Kabar",
+                    "fullName": "Arnold Kabar",
                     "title": "Gardener",
                     "rating": 2.7,
                     "companyName": "Whacky Weed Whisperer",
@@ -109,8 +105,7 @@ class Feed extends Component {
                 },
 
                 {
-                    "firstName": "Steve",
-                    "lastName": "Cao",
+                    "fullName": "Steve Cao",
                     "title": "Kitchen Renovation",
                     "rating": 4.9,
                     "companyName": "Something Ltd.",
@@ -138,8 +133,7 @@ class Feed extends Component {
                     "showContactForPrice": false
                 },
                 {
-                    "firstName": "Larry",
-                    "lastName": "Gerald",
+                    "fullName": "Larry Gerald",
                     "title": "Contractor",
                     "companyName": "Larry Contracts",
                     "totalHires": 5,

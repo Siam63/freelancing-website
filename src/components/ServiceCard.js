@@ -17,7 +17,8 @@ class ServiceCard extends Component {
                 'companyName': this.props.post.companyName,
                 'totalHires': this.props.post.totalHires,
                 'serviceCardTag': this.props.post.serviceCardTag,
-                'showContactForPrice': this.props.post.showContactForPrice
+                'showContactForPrice': this.props.post.showContactForPrice,
+                'fullName': this.props.post.fullName
             }
         };
     }
@@ -41,6 +42,7 @@ class ServiceCard extends Component {
                     showContactForPrice={this.state.post.showContactForPrice}
                     hourlyRate={this.state.post.hourlyRate/100}
                     totalReviews={this.state.post.reviews.length}
+                    fullName={this.state.post.fullName}
                 />
             </div>
         );
