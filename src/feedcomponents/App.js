@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import '../stylesheets/App.scss';
 import MainContent from "./MainContent";
 import Modal from "./Modal";
+import Explore from "../explorecomponents/Explore";
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends Component {
                 <Feed showModalToggle={this.showModalToggle} reviewSetter={this.setReviews}/>
             </MainContent>
             <Modal reviews={this.state.reviews} showModal={this.state.showModal} />
+            <Explore/>
         </div>
     );
   }

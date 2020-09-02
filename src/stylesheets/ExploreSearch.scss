@@ -1,0 +1,41 @@
+.explore-body{
+  flex: 1 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.explore-search-bar{
+  justify-content: center;
+  text-align: left;
+  width: 400px;
+  height: 30px;
+  padding-left: 10px;
+  margin-left: 143px;
+  margin-bottom: 160px;
+  box-shadow: 1.2px 1.2px lightgray;
+  display: flex;
+
+}
+
+.explore-title{
+  display: flex;
+  margin-top: 200px;
+  margin-left: 165px;
+  opacity: 30%;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.body-pic{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 500px;
+  height: 330px;
+}
+
+.container{
+  display: flex;
+}
