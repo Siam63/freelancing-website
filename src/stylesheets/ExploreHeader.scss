@@ -1,0 +1,36 @@
+.explore-header{
+  display: flex;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin-top: 150px;
+  flex: 1 1;
+}
+
+.company-logo{
+  display: flex;
+}
+
+.btn-get-started{
+  display: flex;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 6px;
+  border-style: none;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-get-started:active{
+  background-color: cornflowerblue;
+}
+
+.btn-get-started:hover{
+  cursor: pointer;
+  background-color: cornflowerblue;
+}

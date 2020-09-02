@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../stylesheets/ServiceCardNavigation.scss';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 const messageImage = "https://cdn.iconscout.com/icon/free/png-512/message-537-461910.png";
 
@@ -17,10 +18,6 @@ class ServiceCardNavigation extends Component {
     readMoreOnClick = () => {
         this.props.reviewSetter(this.state.reviews);
         this.props.showModalToggle();
-    }
-
-    viewProfileOnClick = () => {
-
     }
 
     render() {
