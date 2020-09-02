@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ExploreHeader from "./ExploreHeader";
 import ExploreSearch from "./ExploreSearch";
-import ExploreServices from "./ExploreServices";
+import ExploreFooter from "./ExploreFooter";
 
 class Explore extends Component {
     render() {
@@ -9,7 +9,7 @@ class Explore extends Component {
             <div className='Explore'>
                 <ExploreHeader/>
                 <ExploreSearch/>
-                <ExploreServices/>
+                <ExploreFooter/>
             </div>
         );
     }

@@ -1,0 +1,78 @@
+.footer-container{
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(112, 179, 255, .12);
+  justify-content: space-evenly;
+}
+
+.image-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.single-img{
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 160px;
+  width: 320px;
+  opacity: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 4px 4px #dbdbdb;
+}
+
+.single-img:hover{
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.footer-text{
+  display: flex;
+  margin-bottom: 0;
+  background-color: rgba(112, 179, 255, .12);
+  color: rgba(1,1,1, .40);
+  font-style: italic;
+  height: 35px;
+  font-size: 18px;
+  padding-top: 50px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.img-title{
+  display: flex;
+  flex-direction: row;
+  padding-left: 70px;
+  color: rgba(1,1,1, .65);
+  justify-content: space-between;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.img-title-finder{
+  display: flex;
+  padding-top: 12px;
+  color: rgba(71, 166, 255, .7);
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.img-title-finder:hover{
+  cursor: pointer;
+  color: rgba(71, 166, 255, .4);
+}
+
+.title-group{
+  display: flex;
+}
+
+.navi-img{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding-top: 15px;
+  padding-left: 25px;
+}

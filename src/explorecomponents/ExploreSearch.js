@@ -10,7 +10,7 @@ class ExploreSearch extends Component {
                 <div className="container">
                     <img className="body-pic" src={img} alt="companyLogo"/>
                     <span className="input-group">
-                        <h2 className="explore-title">Find a Professional or Find Clients</h2>
+                        <h2 className="explore-title">Find Professionals or Clients</h2>
                         <input type="text" id="search" className="explore-search-bar" placeholder="Search for a Professional"/>
                     </span>
                 </div>
