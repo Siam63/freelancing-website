@@ -9,7 +9,7 @@ class Modal extends Component {
         super(props);
         this.state = {
             "showModal": this.props.showModal,
-            'reviews': this.props.reviews
+            "reviews": this.props.reviews
         }
     }
 
