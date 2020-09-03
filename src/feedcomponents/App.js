@@ -36,7 +36,7 @@ class App extends Component {
                 <Sidebar/>
                 <Feed showModalToggle={this.showModalToggle} reviewSetter={this.setReviews}/>
             </MainContent>
-            <Modal reviews={this.state.reviews} showModal={this.state.showModal} />
+            <Modal reviews={this.state.reviews} showModal={this.state.showModal}/>
             <Explore/>
         </div>
     );

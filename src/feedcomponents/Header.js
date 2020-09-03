@@ -4,14 +4,27 @@ import '../stylesheets/Header.scss';
 const companyImg = "https://www.articulatemarketing.com/hs-fs/hubfs/tech%20company%20logos%204%20-%20articulate%20logo.png?width=474&name=tech%20company%20logos%204%20-%20articulate%20logo.png"
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            selected: false
+        };
+    };
+
     signIn = () => alert("You have signed in!");
     signUp = () => alert("You have signed up!");
     buyPremium = () => alert("You have purchased a membership!");
     exploreHandler = () => alert("You have pressed the explore button!");
 
+    toggleSwitch = () => {
+        this.setState({
+            selected: !this.state.selected
+        });
+    };
+
     render() {
         return (
-            <div className="header">
+            <div className={this.state.selected ? "dark-mode" : "light-mode"}>
                 {this.props.children}
                 <img className="company-logo" src={companyImg} alt="companyLogo"/>
                 <input type="text" id="search" className="search-bar" placeholder="Search for a Professional"/>
@@ -19,6 +32,9 @@ class Header extends Component {
                 <h3 className="explore-text" onClick={this.exploreHandler}>Explore</h3>
                 <h3 className="sign-in-text" onClick={this.signIn}>Sign-In</h3>
                 <h3 className="sign-up-text" onClick={this.signUp}>Sign-Up</h3>
+                <button className="light-toggle" onClick={this.toggleSwitch}>
+                    {this.state.selected ? "Dark Mode" : "Light Mode" }
+                </button>
             </div>
         );
     }
