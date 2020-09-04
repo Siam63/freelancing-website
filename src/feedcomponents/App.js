@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import Header from './Header';
 import Feed from './Feed';
-import Sidebar from './Sidebar';
 import '../stylesheets/App.scss';
 import MainContent from "./MainContent";
 import Modal from "./Modal";
 import Explore from "../explorecomponents/Explore";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -30,15 +30,18 @@ class App extends Component {
 
   render() {
     return (
-        <div className='App'>
-            <Header/>
-            <MainContent>
-                <Sidebar/>
-                <Feed showModalToggle={this.showModalToggle} reviewSetter={this.setReviews}/>
-            </MainContent>
-            <Modal reviews={this.state.reviews} showModal={this.state.showModal}/>
-            <Explore/>
-        </div>
+        <Router>
+            <Switch>
+                <div className='App'>
+                    <Route path="/" exact component={Explore}/>
+                    <Route path="/main" component={MainContent}>
+                        <Header/>
+                        <Feed showModalToggle={this.showModalToggle} reviewSetter={this.setReviews}/>
+                        <Modal reviews={this.state.reviews} showModal={this.state.showModal}/>
+                    </Route>
+                </div>
+            </Switch>
+        </Router>
     );
   }
 }

@@ -1,9 +1,10 @@
 .footer-container{
   display: flex;
-  height: 300px;
   width: 100%;
-  background-color: rgba(112, 179, 255, .12);
+  background-color: rgba(112, 179, 255, 0.12);
   justify-content: space-evenly;
+  height: 450px;
+  margin-top: 0;
 }
 
 .image-section{
@@ -22,6 +23,7 @@
   margin-left: 50px;
   margin-right: 50px;
   box-shadow: 4px 4px #dbdbdb;
+  margin-top: 100px;
 }
 
 .single-img:hover{
@@ -35,11 +37,9 @@
   background-color: rgba(112, 179, 255, .12);
   color: rgba(1,1,1, .40);
   font-style: italic;
-  height: 35px;
   font-size: 18px;
-  padding-top: 50px;
+  padding-top: 15px;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .img-title{
@@ -58,6 +58,7 @@
   color: rgba(71, 166, 255, .7);
   font-size: 12px;
   justify-content: space-between;
+  bottom: 0;
 }
 
 .img-title-finder:hover{
