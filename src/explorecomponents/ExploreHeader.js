@@ -8,9 +8,6 @@ class ExploreHeader extends Component {
 
     getStarted = () => alert("Ola comostas!");
     signIn = () => alert("You have signed in!");
-    signUp = () => alert("You have signed up!");
-
-
 
     render() {
         return (
@@ -21,7 +18,9 @@ class ExploreHeader extends Component {
                     <h3 className="explore-text">Feed</h3>
                 </Link>
                 <h3 className="sign-in-text" onClick={this.signIn}>Sign-In</h3>
-                <h3 className="sign-up-text" onClick={this.signUp}>Sign-Up</h3>
+                <Link to='/signup'>
+                    <h3 className="sign-up-text" onClick={this.signUp}>Sign-Up</h3>
+                </Link>
             </div>
         );
     }
