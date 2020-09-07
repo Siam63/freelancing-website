@@ -5,8 +5,9 @@ import '../stylesheets/App.scss';
 import MainContent from "./MainContent";
 import Modal from "./Modal";
 import Explore from "../explorecomponents/Explore";
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import SignUp from "../signupcomponents/SignUp";
+import SignIn from "../signincomponents/SignIn";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -41,6 +42,7 @@ class App extends Component {
                         <Modal reviews={this.state.reviews} showModal={this.state.showModal}/>
                     </Route>
                     <Route path="/signup" component={SignUp}/>
+                    <Route path='/signin' component={SignIn}/>
                 </div>
             </Switch>
         </Router>

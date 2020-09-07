@@ -17,7 +17,9 @@ class SignUpContent extends Component {
                     <input type="text" className="signup-search-bar" placeholder="Email"/>
                     <input type="text" className="signup-search-bar" placeholder="Password"/>
                     <input type="text" className="signup-search-bar" placeholder="Re-type Password"/>
-                    <h3 className="forgot-pass">Forgot Your Password? Click Here.</h3>
+                    <Link to='/signin'>
+                        <h3 className="existing-acc">Already have an Account? Log in</h3>
+                    </Link>
                     <Link to='/'>
                         <h1 className="redirect">Redirect to main page</h1>
                     </Link>
