@@ -1,30 +1,30 @@
-.sign-up-content{
+.sign-in-content{
   display: flex;
   flex-direction: row;
-  margin-right: 100px;
-  touch-action: none;
+  justify-content: space-between;
 }
 
-.sign-up-sidebar-body{
+.sign-in-sidebar-body{
   display: flex;
   height: 930px;
-  width: 30%;
+  justify-content: space-between;
 }
 
-.content-title{
+.title{
   display: flex;
   color: #30A8FF;
   justify-content: space-between;
-  margin-left: 575px;
-  margin-top: 250px;
+  margin-top: 350px;
+  font-size: 25px;
+  margin-left: 500px;
 }
 
-.signup-search-bar{
+.signin-search-bar{
   margin: 15px;
+  margin-left: 445px;
   display: flex;
-  width: 49%;
+  width: 50%;
   justify-content: space-between;
-  margin-left: 500px;
   font-size: 18px;
   height: 30px;
   border-radius: 20px;
@@ -35,14 +35,14 @@
   padding-left: 10px;
 }
 
-.signup-search-bar:hover{
+.signin-search-bar:hover{
   cursor: pointer;
   opacity: 70%;
 }
 
-.existing-acc{
+.pass{
   display: flex;
-  margin-left: 597px;
+  margin-left: 530px;
   justify-content: space-between;
   font-size: 15px;
   margin-top: 20px;
@@ -50,18 +50,19 @@
   opacity: 80%;
 }
 
-.existing-acc:hover{
+.pass:hover{
   cursor: pointer;
-  opacity: 55%;
+  opacity: 45%;
 }
 
-.redirect{
+.redirect-back{
   display: flex;
   justify-content: space-between;
-  margin-left: 645px;
+  margin-left: 570px;
   font-size: 15px;
-  margin-top: 340px;
+  margin-top: 380px;
   color: #30A8FF;
+  text-decoration: none;
 }
 
 .redirect:hover{

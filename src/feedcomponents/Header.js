@@ -12,10 +12,6 @@ class Header extends Component {
         };
     };
 
-    signIn = () => alert("You have signed in!");
-    signUp = () => alert("You have signed up!");
-    buyPremium = () => alert("You have purchased a membership!");
-
     toggleSwitch = () => {
         this.setState({
             selected: !this.state.selected
@@ -28,12 +24,16 @@ class Header extends Component {
                 {this.props.children}
                 <img className="company-logo" src={companyImg} alt="companyLogo"/>
                 <input type="text" id="search" className="search-bar" placeholder="Search for a Professional"/>
-                <button className="btn-premium" onClick={this.buyPremium}>Buy Premium</button>
+                <button className="btn-premium">Buy Premium</button>
                 <Link to='/'>
                     <h3 className="explore-text">Explore</h3>
                 </Link>
-                <h3 className="sign-in-text" onClick={this.signIn}>Sign-In</h3>
-                <h3 className="sign-up-text" onClick={this.signUp}>Sign-Up</h3>
+                <Link to='/signin'>
+                    <h3 className="sign-in-text">Sign-In</h3>
+                </Link>
+                <Link to='/signup'>
+                    <h3 className="sign-up-text">Sign-Up</h3>
+                </Link>
                 <button className="light-toggle" onClick={this.toggleSwitch}>
                     {this.state.selected ? "Dark Mode" : "Light Mode" }
                 </button>
